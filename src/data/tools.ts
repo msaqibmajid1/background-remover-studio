@@ -1,0 +1,27 @@
+export const TOOLS = [
+  { slug: "editor", label: "Canvas Editor" },
+  { slug: "crop-tool", label: "Crop Tool" },
+  { slug: "background-removal", label: "Background Removal" },
+  { slug: "image-filters", label: "Image Filters" },
+  { slug: "object-removal", label: "Object Removal" },
+  { slug: "upscaling", label: "Image Upscaling" },
+  { slug: "optimization", label: "Image Optimization" },
+  { slug: "collage", label: "Collage Maker" },
+  { slug: "quotes", label: "Quotes Maker" },
+  { slug: "image-downloader", label: "Image Downloader" },
+  { slug: "text-utility", label: "Text Utility" },
+  { slug: "rename-images", label: "Rename Images" },
+  { slug: "simplified-image-search", label: "Simplified Image Search" },
+  { slug: "ai-text-generator", label: "AI Text Generator" },
+  { slug: "upgraded-text-generator", label: "Upgraded Text Generator" },
+  { slug: "google-images-maker", label: "Google Images Maker" },
+  { slug: "clip-merger", label: "Clip Merger" },
+  { slug: "facebook-extractor", label: "Facebook Extractor" },
+  { slug: "page-post-cloner", label: "Page Post Cloner" },
+  { slug: "page-posts-delete", label: "Page Posts Delete" },
+  { slug: "page-monetization-checker", label: "Page Monetization Checker" },
+  { slug: "page-insight-checker", label: "Page Insight Checker" },
+  { slug: "page-comment-reply", label: "Page Comment Reply" },
+] as const;
+
+export type ToolSlug = typeof TOOLS[number]["slug"];
