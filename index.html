@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Composer - Professional Image Editing Suite</title>
+    <meta name="description" content="Canvas Composer by ILYAGOLDMAN LLC. Professional web-based image editing suite with batch processing, filters, text overlays, collage maker, and more.">
+    <meta name="author" content="Lovable" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://canvas-codex.vercel.app/project-logo.webp">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Lovable" />
+    <meta name="twitter:image" content="https://canvas-codex.vercel.app/project-logo.webp">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Albert+Sans:ital,wght@0,400;0,700;1,400&family=Alegreya:ital,wght@0,400;0,700;1,400&family=Alex+Brush&family=Alfa+Slab+One&family=Allura&family=Amiri:ital,wght@0,400;0,700;1,400&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400&family=Anton&family=Archivo:ital,wght@0,400;0,700;1,400&family=Arvo:ital,wght@0,400;0,700;1,400&family=Asap:ital,wght@0,400;0,700;1,400&family=Bangers&family=Barlow:ital,wght@0,400;0,700;1,400&family=Be+Vietnam+Pro:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=Belleza&family=Bitter:ital,wght@0,400;0,700;1,400&family=Black+Ops+One&family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Bowlby+One+SC&family=Bungee&family=Cabin:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;700&family=Cardo:ital,wght@0,400;0,700;1,400&family=Catamaran:wght@400;700&family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;700&family=Cookie&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Cormorant:ital,wght@0,400;0,700;1,400&family=Courgette&family=Cousine:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Damion&family=Dancing+Script:wght@400;700&family=Domine:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Engagement&family=Exo+2:ital,wght@0,400;0,700;1,400&family=Faustina:ital,wght@0,400;0,700;1,400&family=Figtree:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@400;700&family=Forum&family=Fraunces:ital,wght@0,400;0,700;1,400&family=Fredoka+One&family=Fugaz+One&family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400&family=Gloock&family=Great+Vibes&family=Heebo:wght@400;700&family=Herr+Von+Muellerhoff&family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&family=Inconsolata:wght@400;700&family=Inter:wght@400;600;700&family=Italiana&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,400;0,700;1,400&family=Josefin+Slab:ital,wght@0,400;0,700;1,400&family=Julius+Sans+One&family=Karla:ital,wght@0,400;0,700;1,400&family=Kaushan+Script&family=Lato:ital,wght@0,400;0,700;1,400&family=Lexend:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Lora:ital,wght@0,400;0,700;1,400&family=Lustria&family=Manrope:wght@400;700&family=Marcellus&family=Marck+Script&family=Martel:wght@400;700&family=Merienda:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Monoton&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Mr+Dafoe&family=Mulish:ital,wght@0,400;0,700;1,400&family=Neuton:ital,wght@0,400;0,700;1,400&family=Niconne&family=Nixie+One&family=Norican&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,400;0,700;1,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;700&family=Outfit:wght@400;700&family=Overlock:ital,wght@0,400;0,700;1,400&family=Overpass+Mono:wght@400;700&family=PT+Mono&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Passion+One:wght@400;700&family=Permanent+Marker&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&family=Playball&family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poiret+One&family=Poppins:ital,wght@0,400;0,700;1,400&family=Press+Start+2P&family=Public+Sans:ital,wght@0,400;0,700;1,400&family=Questrial&family=Quicksand:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&family=Red+Hat+Display:ital,wght@0,400;0,700;1,400&family=Righteous&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&family=Rouge+Script&family=Rubik:ital,wght@0,400;0,700;1,400&family=Russo+One&family=Sacramento&family=Sahitya:wght@400;700&family=Satisfy&family=Shrikhand&family=Silkscreen:wght@400;700&family=Sorts+Mill+Goudy:ital@0;1&family=Sora:wght@400;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Spectral:ital,wght@0,400;0,700;1,400&family=Tangerine:wght@400;700&family=Tenor+Sans&family=Trirong:ital,wght@0,400;0,700;1,400&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&family=Ultra&family=Unna:ital,wght@0,400;0,700;1,400&family=Urbanist:ital,wght@0,400;0,700;1,400&family=Vollkorn:ital,wght@0,400;0,700;1,400&family=Work+Sans:ital,wght@0,400;0,700;1,400&family=Yellowtail&family=Yeseva+One&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Canvas Composer - Professional Image Editing Suite">
+  <meta name="twitter:title" content="Canvas Composer - Professional Image Editing Suite">
+  <meta property="og:description" content="Canvas Composer by ILYAGOLDMAN LLC. Professional web-based image editing suite with batch processing, filters, text overlays, collage maker, and more.">
+  <meta name="twitter:description" content="Canvas Composer by ILYAGOLDMAN LLC. Professional web-based image editing suite with batch processing, filters, text overlays, collage maker, and more.">
+</head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
